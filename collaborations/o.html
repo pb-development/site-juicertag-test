@@ -5,7 +5,53 @@
   <meta name="robots" content="noindex">
 </head>
 <body>
-  check collaboration o
-    
+<h1>o</h1>
+<script src="//tags.bkrtx.com/js/bk-coretag.js"></script>
+<script>
+(function() {
+  BKTAG._reset();
+
+  // グローバル変数に何かを設定
+  bk_ignore_outside_iframe = false;
+
+  // bluekai設定データ作成
+  var catL = "";
+  var catM = "";
+  var catS = "";
+  var ocat = 'Pet___Cat'.split("___", 6);
+  var data = {
+    'Tier1' : (typeof(ocat[0]) != 'undefined') ? ocat[0] : '' ,
+    'Tier2' : (typeof(ocat[1]) != 'undefined') ? ocat[1] : '' ,
+    'Tier3' : (typeof(ocat[2]) != 'undefined') ? ocat[2] : '' ,
+    'Tier4' : (typeof(ocat[3]) != 'undefined') ? ocat[3] : '' ,
+    'Tier5' : (typeof(ocat[4]) != 'undefined') ? ocat[4] : '' ,
+    'Tier6' : (typeof(ocat[5]) != 'undefined') ? ocat[5] : '' ,
+    'Tier7' : 1,
+    'Com1'  : '',
+    'Com2'  : '',
+    'Com3'  : '',
+    'Com4'  : '',
+    'Com5'  : '',
+    'Com6'  : ''
+  };
+
+  bk_addPageCtx('Tier1', data.Tier1);
+  bk_addPageCtx('Tier2', data.Tier2);
+  bk_addPageCtx('Tier3', data.Tier3);
+  bk_addPageCtx('Tier4', data.Tier4);
+  bk_addPageCtx('Tier5', data.Tier5);
+  bk_addPageCtx('Tier6', data.Tier6);
+  bk_addPageCtx('Tier7', data.Tier7);
+  bk_addPageCtx('Com1', data.Com1);
+  bk_addPageCtx('Com2', data.Com2);
+  bk_addPageCtx('Com3', data.Com3);
+  bk_addPageCtx('Com4', data.Com4);
+  bk_addPageCtx('Com5', data.Com5);
+  bk_addPageCtx('Com6', data.Com6);
+
+  // execute BKTAG
+  BKTAG.doTag(48204, 10);
+}());
+</script>
 </body>
 </html>

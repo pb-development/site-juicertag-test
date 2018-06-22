@@ -8,7 +8,38 @@
 <h1>c</h1>
 <script src="//tags.bkrtx.com/js/bk-coretag.js"></script>
 <script>
-// BKTAG._reset();
+(function() {
+  BKTAG._reset();
+
+  // グローバル変数に何かを設定
+  bk_ignore_outside_iframe = false;
+
+  var arr = new Array();
+  arr.push(['juicer_age', 46]);
+  arr.push(['juicer_gen', 1]);
+  arr.push(['juicer_cat', "n_2401000000_1"]);
+  arr.push(['juicer_org1', ""]);
+  arr.push(['juicer_org2', ""]);
+  arr.push(['juicer_org3', ""]);
+  arr.push(['juicer_org4', ""]);
+  arr.push(['juicer_org5', ""]);
+  arr.push(['juicer_org6', ""]);
+  arr.push(['juicer_org7', ""]);
+  arr.push(['predix_url', "http://nyannyan-images.noraneko.work/"]);
+  arr.push(['predix_qry', ""]);
+
+  function makeTag(args) {
+    if (args.length != 2) return;
+    if ((typeof(args[0]) === 'string' && args[0] !== '') && (typeof(args[1]) !== 'undefined' && args[1] !== null && args[1] !== '')) {
+      bk_addPageCtx(args[0], args[1]);
+    }
+    return;
+  }
+  for (var i = 0; i < arr.length; i++) makeTag(arr[i]);
+
+  bk_addPageCtx('editcheck', '20171017-1');
+  BKTAG.doTag(53396, 1);
+}());
 </script>
 </body>
 </html>
